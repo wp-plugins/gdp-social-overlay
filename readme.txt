@@ -39,6 +39,9 @@ You can choice which social to promote on plugin settings.
 
 == Changelog ==
 
+= 0.1.2 =
+* Fix close.png image
+
 = 0.1 =
 * Facebook, Twitter and Google Badge integrated
 * Frequency and Location integration
