@@ -48,3 +48,5 @@ You can choice which social to promote on plugin settings.
 
 == Upgrade Notice ==
 
+= 0.1.2 =
+Update GDP Social Plugin Now! :)
