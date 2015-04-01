@@ -21,7 +21,7 @@ function so_output (){
 ?>
 	<div class="gdp-overlay" id="gdp-overlayBox"></div>                      
 	<div class="gdp-modal" id="gdp-modalBox">
-	<img width="32" class="gdp-close" src="/wp-content/plugins/gdp-SocialOverlay/assets/image/close.png"/>
+	<img width="32" class="gdp-close" src="/wp-content/plugins/gdp-social-overlay/assets/image/close.png"/>
 	<?php
 	if($social == 'facebook'){
 	?>
