@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: #GDP-SocialOverlay
-Version: 0.1.2
+Version: 0.1.3
 Plugin URI: http://www.giovannidepadova.com/?p=21
 Description: The plugin show html overlay with facebook, twitter or google plus button.
 Author: Giovanni De Padova
