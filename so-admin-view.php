@@ -14,7 +14,9 @@
 				'twitter'=>$_POST['twitter'],
 				'gplus'=>$_POST['gplus'],
 				'whatSocial'=>$_POST['whatSocial'],
-				'sitename'=>$_POST['sitename'],
+				'firstline'=>$_POST['firstline'],
+				'promoline'=>$_POST['promoline'],
+				'nomoreline'=>$_POST['nomoreline'],
 				'facebookSDK'=>$_POST['facebookSDK'], 'facebookAPPID'=>$_POST['facebookAPPID']
 );
 
@@ -36,7 +38,9 @@ if($opt['pagina']==1)$pagina = 'checked="checked"'; else $pagina = '';
 if($opt['archivio']==1)$archivio = 'checked="checked"'; else $archivio = '';
 if($opt['facebookSDK']==1)$facebookSDK = 'checked="checked"'; else $facebookSDK = '';
 
-if(empty($opt['sitename'])) $sitename = get_bloginfo('name'); else $sitename = $opt['sitename'];
+if(empty($opt['firstline'])) $firstline= 'Become fan on Facebook'; else $firstline= $opt['firstline'];
+if(empty($opt['promoline'])) $promoline= 'Click on Like'; else $promoline= $opt['promoline'];
+if(empty($opt['nomoreline'])) $nomoreline= "Don't ask me more!"; else $nomoreline= $opt['nomoreline'];
 
 
 ?>
@@ -51,7 +55,9 @@ if(empty($opt['sitename'])) $sitename = get_bloginfo('name'); else $sitename = $
 </style>
 <form class="gdp-socialAdmin" method="post" action="admin.php?page=gdp-social-overlay">
 <input type="hidden" name="refresh-gdpsocial" value="pizzarrone" />
-<label for="siteName">Site name</label>  <input type="text" name="sitename" id="sitename" value="<?=$sitename?>">
+<label for="firstline">First line</label>  <input type="text" name="firstline" id="firstline" value="<?=$firstline?>"><br />
+<label for="promoline">Promo line</label>  <input type="text" name="promoline" id="promoline" value="<?=$promoline?>"><br />
+<label for="nomore">No more line</label>  <input type="text" name="nomoreline" id="nomoreline" value="<?=$nomoreline?>">
 <br />
 <h2>FREQUENCY</h2>
 <div class="gdp-item">

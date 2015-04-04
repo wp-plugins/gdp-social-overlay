@@ -17,7 +17,9 @@ function so_output (){
 	if((is_home() && $opt['home']) || (is_page() && $opt['pagina']=='1') || (is_single() && $opt['articolo'])){
 	
 	$social = $opt['whatSocial'];
-	$sitename = $opt['sitename'];
+	$firstline= $opt['firstline'];
+	$promoline= $opt['promoline'];
+	$nomoreline= $opt['nomoreline'];
 ?>
 	<div class="gdp-overlay" id="gdp-overlayBox"></div>                      
 	<div class="gdp-modal" id="gdp-modalBox">
@@ -25,37 +27,37 @@ function so_output (){
 	<?php
 	if($social == 'facebook'){
 	?>
-	<p class="gdp-promotit">Diventa fan di <strong><?=$sitename?></strong> su Facebook</p> 
+	<p class="gdp-promotit"><?=$firstline?></p> 
 	<div class="fb-page" data-href="<?=$opt['facebook']?>" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"></div>
 	<div class="gdp-arrow"></div>
-	<div class="gdp-promotit">Metti mi piace</div>
+	<div class="gdp-promotit"><?=$promoline?></div>
 <div style="clear:both"></div>
-        <small id="dontShowMeAgain">Sono già fan, non chiedere piu.</small>
+        <small id="dontShowMeAgain"><?=$nomoreline?></small>
 	<?php
 	}
 	if($social == 'facebookFollow'){
 	?>
-        <p class="gdp-promotit">Segui <strong><?=$sitename?></strong> su Facebook</p>
+        <p class="gdp-promotit"><?=$firstline?></p>
         <div class="fb-follow" data-href="<?=$opt['facebookFollow']?>" data-layout="box_count" data-show-faces="false"></div>
 	<br />
 	<div style="clear:both"></div>
-        <small id="dontShowMeAgain" style="margin-top:10px;">Lo seguo già, non chiedere piu.</small>
+        <small id="dontShowMeAgain" style="margin-top:10px;"><?=$nomoreline?></small>
 	<?php
 	}
 	if($social == 'twitter'){
 	?>
-	<p class="gdp-promotit">Segui <?=$sitename?> su Twitter</p>
+	<p class="gdp-promotit"><?=$firstline?></p>
 	<div class="twitterBox">
 	<a href="https://twitter.com/<?=$opt['twitter']?>" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @<?=$opt['twitter']?></a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	</div>
 	<div style="clear:both"></div>
-	<small id="dontShowMeAgain">Seguo già , non chiedere piu.</small>
+	<small id="dontShowMeAgain"><?=$nomoreline?></small>
 	<?php
 	}
 	if($social == 'gplus'){
 	?>
-        <p class="gdp-promotit">Segui <?=$sitename?> su Google+</p>
+        <p class="gdp-promotit"><?=$firstline?></p>
 <!-- Posiziona questo tag all'interno del tag head oppure subito prima della chiusura del tag body. -->
 <script src="https://apis.google.com/js/platform.js" async defer>
   {lang: 'it'}
@@ -64,7 +66,7 @@ function so_output (){
 <!-- Inserisci questo tag nel punto in cui vuoi che sia visualizzato l'elemento widget. -->
 <div class="g-page" data-width="280" data-href="<?=$opt['gplus']?>" data-layout="landscape" data-rel="publisher"></div>
         <div style="clear:both"></div>
-        <small id="dontShowMeAgain">Seguo già , non chiedere piu.</small>
+        <small id="dontShowMeAgain"><?=$nomoreline?></small>
 	<?php
 	}
 	?>

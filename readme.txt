@@ -3,7 +3,7 @@ Contributors: johnnydp
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9TPCUGWY66LQW
 Tags: social overlay, facebook page plugin, facebook overlay, google plus overlay, modal css
 Requires at least: 3.0.1
-Tested up to: 3.4
+Tested up to: 3.0
 Stable tag: 4.3
 License: GPLv2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -39,6 +39,9 @@ You can choice which social to promote on plugin settings.
 
 == Changelog ==
 
+= 0.1.3 =
+* All strings are customizable now (no language limitation)
+
 = 0.1.2 =
 * Fix close.png image
 
@@ -47,6 +50,9 @@ You can choice which social to promote on plugin settings.
 * Frequency and Location integration
 
 == Upgrade Notice ==
+
+= 0.1.3 =
+You can edit all strings now.
 
 = 0.1.2 =
 Update GDP Social Plugin Now! :)
