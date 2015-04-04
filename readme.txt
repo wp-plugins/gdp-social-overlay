@@ -1,7 +1,8 @@
 === Plugin Name ===
 Contributors: johnnydp
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9TPCUGWY66LQW
-Tags: social overlay, facebook page plugin, facebook overlay, google plus overlay, modal css
+Tags: social overlay, facebook page plugin, facebook overlay, google plus overlay, modal css, Facebook Page Promoter Lightbox, Facebook Page Promoter, page promoter, social promoter
+
 Requires at least: 3.0.1
 Tested up to: 3.0
 Stable tag: 4.3
