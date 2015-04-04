@@ -26,6 +26,8 @@ You can choice which social to promote on plugin settings.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to settings page and put your informations
 
+You can see working demo on http://www.viralpop.it/
+
 == Frequently Asked Questions ==
 
 
